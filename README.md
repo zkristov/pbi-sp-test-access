@@ -35,4 +35,4 @@ In order for your service principal to have the necessary permissions to perform
 
 3) Does the Azure AD App (aka service principal) have Power BI API permissions granted?  
 When you create an Azure AD application for a service principal to access the Power BI REST API, it's recommended that you avoid adding any Power BI (delegated or application) API permissions.
-![API Permissions Screenshot](images\api_permissions_screenshot.png)
+![API Permissions Screenshot](images/api_permissions_screenshot.png)
