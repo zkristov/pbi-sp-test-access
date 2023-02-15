@@ -30,10 +30,10 @@ To resolve this error, check the following:
 **1) Has the Azure AD Security Group (containing the service principal) been added to the Power BI Tenant settings?**    
 The Azure AD Security group must be added to the proper Power BI Tenant setting(s) for authorization.   
 
-**2) Has the Azure AD Security Group been added to the Power BI Workspace with at least workspace Member privileges?**    
+**2) Has the Azure AD Security Group (containing the service principal) been added to the Power BI Workspace with at least workspace Member privileges?**    
 In order for your service principal to have the necessary permissions to perform Premium workspace and dataset operations, you must add the service principal as a workspace Member or Admin.  
-[Note: This is not required when using the [Power BI read-only admin APIs](https://learn.microsoft.com/en-us/power-bi/enterprise/read-only-apis-service-principal-authentication).]  
+_Note: This is not required when using the [Power BI read-only admin APIs](https://learn.microsoft.com/en-us/power-bi/enterprise/read-only-apis-service-principal-authentication)._  
 
 **3) Does the Azure AD App (aka service principal) have Power BI API permissions granted?**   
-When you create an Azure AD application for a service principal to access the Power BI REST API, it's recommended that you avoid adding any Power BI (delegated or application) API permissions.
+When you create a service principal to access the Power BI REST API, it's recommended that you avoid adding any Power BI (delegated or application) API permissions.
 ![API Permissions Screenshot](images/api_permissions_screenshot.png)
